@@ -15,21 +15,9 @@ body {
     line-height: 1.5;
     color: #555;
     font-family: 'Nunito Sans', sans-serif;
+     background-color: black;
 }
-.logo{
-    display:inline-block;
-    width:75px;height:auto;
-}
-.logo-wrap {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    flex-wrap: wrap;
-}
-.logo-wrap img, .logo-wrap i {
-    padding: 10px;
-    margin-bottom:10px;
-}
+
 article,
 aside,
 details,
@@ -188,7 +176,11 @@ progress {
     display: inline-block;
     vertical-align: baseline
 }
-
+.logo{
+	display: inline-block;
+    width: 75px;
+    height: 75px;
+}
 textarea {
     overflow: auto
 }
@@ -227,35 +219,6 @@ summary {
 [hidden],
 template {
     display: none
-}
-
-.projects{
-    display: flex;
-    align-items: center;
-}
-.projects-info, .projects-img{
-   
-    text-align: center;
-}
-.projects-info{
-padding-right: 10px;
-    margin-right: 10px;
-}
-
-.projects-wrap .projects:nth-child(even) {
-    flex-direction: row-reverse;
-}
-.projects-wrap .projects:nth-child(even) .projects-info {
-    padding-right: 0px;
-    margin-right: 0px;
-    padding-left: 10px;
-    margin-left: 10px;
-}
-.projects-img{
-    min-width:470px;
-}
-.projects-img iframe{
-    height: 270px; width:100%;
 }
 
 /*!
@@ -4862,18 +4825,10 @@ a img {
     border: 0
 }
 
-.user-projects video, .projects video {
-    max-width: 470px;
-}
-.small-logo {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-        margin-bottom: 40px;
-}
-.small-logo i, .small-logo img{
-height:32px;
-              width:32px;font-size: 35px;    margin: 5px;
+img.logo{
+	    display: inline-block;
+    width: 75px;
+    height: 75px;
 }
 
 #particles-js {
@@ -4953,7 +4908,7 @@ height:32px;
 
 @media only screen and (min-width:550px) {
     .header-links .link {
-        font-size: 40px
+        font-size: 20px
     }
 }
 
@@ -5052,8 +5007,7 @@ height:32px;
 }
 
 .user p {
-    font-size: 16px;
-    min-width: 220px;
+    font-size: 16px
 }
 
 @media only screen and (min-width:550px) {
@@ -5087,14 +5041,12 @@ height:32px;
     margin: 20px auto
 }
 
-.projects img, .user-projects img {
+.user-projects img {
     max-width: 100%;
     height: auto;
     border-radius: 5px
 }
- .project-links-wrap img.logo{
-    width: 100px;
-} 
+
 .user-projects h5 {
     margin: 0
 }
@@ -5138,51 +5090,10 @@ height:32px;
         float: left
     }
 }
-@media only screen and (max-width:1150px) {
-        .user {
-        flex-wrap: wrap;
-        justify-content: center;
-            }
-            .user-projects {
-            margin: 20px auto;
-            display: flex
-        ;
-            align-items: center;
-            justify-content: center;
-            flex-direction: column;
-            text-align: center;
-        }   
-         .contents-right, .images-right {
-                float: none;width: 100%;
-            }
-            .contents {
-        width: 100%;
-    }
-    .projects, .projects-wrap .projects:nth-child(even) {
-        flex-direction: column;
-    }
-    .projects-wrap .projects .projects-info, .projects-wrap .projects:nth-child(even) .projects-info{
-        margin:0;
-        padding:0;        margin-bottom: 10px;
-    }
-    .projects-img{
-        width:100%;
-    }
 
-    .projects-img iframe{
-        min-height: 300px; max-width:550px;
-    }
-
-
-}
-.project-links-wrap{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
 .project-link {
     display: inline-block;
-    margin: 10px;
+    margin: 10px 0;
     padding: 5px;
     color: #1488CC;
     background-color: transparent;
@@ -5194,16 +5105,10 @@ height:32px;
     cursor: pointer;
     transition: color .3s ease-out, background-color .3s ease-out, border-color .3s ease-out
 }
-a.project-link {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100px;
-    height: 30px;
-}
+
 .project-link:active,
 .project-link:hover {
-    background-color: #c1b9ff;
+    background-color: #5347a8;
     border-color: #5347a8;
     color: #fff;
     transition: color .3s ease-in, background-color .3s ease-in, border-color .3s ease-in
