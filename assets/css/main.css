@@ -5169,11 +5169,25 @@ height:32px;
         width:100%;
     }
 
-    .projects-img iframe{
+    .projects-img iframe, .projects video{
         min-height: 300px; max-width:550px;
     }
 
 
+}
+
+@media only screen and (max-width:670px) {
+    .projects-img {
+        min-width: 0;
+    }
+    .projects-img iframe, .projects video {
+        
+        min-height: 200px;
+        width: 100%;
+    }    
+    .project-links-wrap{
+        flex-wrap:wrap;
+    }
 }
 .project-links-wrap{
     display: flex;
